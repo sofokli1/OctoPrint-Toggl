@@ -1,0 +1,26 @@
+<form class="form-horizontal">
+    <h4>General Settings</h4>
+    <div class="control-group">
+        <p>In order to use this plugin you need a free Basic Toggl account that you can create <a href="https://toggl.com">here</a></p>
+        <label class="control-label">{{ _('Api Token') }}</label>
+        <div class="controls">
+            <input type="text" class="input-block-level" data-bind="value: settings.plugins.toggl.token">
+            <span class="help-inline" class="muted"> <small>(Required)</small></span>
+            <span class="help-inline">You can find your API Token at the bottom of your <a href="https://toggl.com/app/profile">Toggl Profile settings</a></span>
+        </div>
+        <br/>
+        <p>Apart from the file name in the time entry description, the following can also be added:</p>
+		<div class="controls">
+			<label class="checkbox">
+				<input type="checkbox" data-bind="checked: settings.plugins.toggl.show_printer_model" />
+				Add printer model in the time entry description
+			</label>
+		</div>
+        <div class="controls">
+			<label class="checkbox">
+				<input type="checkbox" data-bind="checked: settings.plugins.toggl.show_printer_firmware" />
+				Add printer firmware in the time entry description
+			</label>
+		</div>
+    </div>
+</form>

@@ -1,0 +1,14 @@
+<form class="form-horizontal">
+    <div class="control-group">
+        <p><strong>In order to use the Toggl plugin you need a free Basic Toggl account that you can create <a href="https://toggl.com">here</a>.</strong>
+        <br/>
+    	If you don't want to setup the API token now, then it's ok. You can do this at any time in the plugin settings via the settings dialog.
+    	</p>
+        <label class="control-label">{{ _('Api Token') }}</label>
+        <div class="controls">
+            <input type="text" class="input-block-level" data-bind="value: settings.plugins.toggl.token">
+            <span class="help-inline" class="muted"> <small>(Required)</small></span>
+            <span class="help-inline">You can find your API Token at the bottom of your <a href="https://toggl.com/app/profile">Toggl Profile settings</a></span>
+        </div>
+    </div>
+</form>
