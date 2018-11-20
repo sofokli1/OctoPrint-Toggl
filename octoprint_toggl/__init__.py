@@ -93,7 +93,8 @@ class TogglPlugin(octoprint.plugin.SettingsPlugin,
 
         toggl.setAPIKey(self._settings.get(["token"]))
         currentTimer = toggl.currentRunningTimeEntry()
-        toggl.stopTimeEntry(currentTimer['data']['id'])
+        if currentTimer != None:
+            toggl.stopTimeEntry(currentTimer['data']['id'])
 
 
     ##~~ Softwareupdate hook
