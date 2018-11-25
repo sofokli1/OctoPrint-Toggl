@@ -258,8 +258,7 @@ class TogglPlugin(octoprint.plugin.SettingsPlugin,
     def get_template_configs(self):
 
         return [
-            dict(type="settings", custom_bindings=False),
-            dict(type="wizard", custom_bindings=False)
+            dict(type="settings", custom_bindings=False)
         ]
 
 
